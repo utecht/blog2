@@ -1,0 +1,233 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>The Vimer a Vim Primer &#8211; Utecht Blog</title>
+<meta name="description" content="Some ramblings about work.">
+<meta name="keywords" content="vim">
+
+
+
+<!-- Open Graph -->
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="The Vimer a Vim Primer">
+<meta property="og:description" content="Some ramblings about work.">
+<meta property="og:url" content="/vimer/">
+<meta property="og:site_name" content="Utecht Blog">
+
+
+
+
+
+<link rel="canonical" href="/vimer/">
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Utecht Blog Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<!-- Webfonts -->
+<link href="//fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic" rel="stylesheet" type="text/css">
+
+<meta http-equiv="cleartype" content="on">
+
+<!-- Load Modernizr -->
+<script src="/assets/js/vendor/modernizr-2.6.2.custom.min.js"></script>
+
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="/favicon.ico">
+<!-- 32x32 -->
+<link rel="shortcut icon" href="/favicon.png">
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link rel="apple-touch-icon-precomposed" href="/images/apple-touch-icon-precomposed.png">
+<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/images/apple-touch-icon-72x72-precomposed.png">
+<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/images/apple-touch-icon-114x114-precomposed.png">
+<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/images/apple-touch-icon-144x144-precomposed.png">
+
+
+
+</head>
+
+<body id="post" >
+
+<!--[if lt IE 9]><div class="upgrade"><strong><a href="http://whatbrowser.org/">Your browser is quite old!</strong> Why not upgrade to a different browser to better enjoy this site?</a></div><![endif]-->
+<nav id="dl-menu" class="dl-menuwrapper" role="navigation">
+	<button class="dl-trigger">Open Menu</button>
+	<ul class="dl-menu">
+		<li><a href="/">Home</a></li>
+		<li>
+			<a href="#">About</a>
+			<ul class="dl-submenu">
+				<li>
+					<img src="/images/avatar.jpg" alt="Joseph Utecht photo" class="author-photo">
+					<h4>Joseph Utecht</h4>
+					<p>Semantic web developer at the University of Arkansas for Medical Sciences.</p>
+				</li>
+				<li><a href="/about/"><span class="btn btn-inverse">Learn More</span></a></li>
+				<li>
+					<a href="mailto:joseph.utecht@gmail.com"><i class="fa fa-fw fa-envelope"></i> Email</a>
+				</li>
+				
+				
+				
+				
+				
+				
+				
+				
+				
+			</ul><!-- /.dl-submenu -->
+		</li>
+		<li>
+			<a href="#">Posts</a>
+			<ul class="dl-submenu">
+				<li><a href="/posts/">All Posts</a></li>
+				<li><a href="/tags/">All Tags</a></li>
+			</ul>
+		</li>
+		
+	    
+	    <li><a href="https://github.com/utecht" target="_blank">Github</a></li>
+	  
+	    
+	    <li><a href="https://cafe-trauma.com" target="_blank">Cafe Project</a></li>
+	  
+	</ul><!-- /.dl-menu -->
+</nav><!-- /.dl-menuwrapper -->
+
+
+
+
+<div id="main" role="main">
+  <article class="hentry">
+    <header class="header-title">
+      <div class="header-title-wrap">
+        
+          <h1 class="entry-title"><a href="/vimer/" rel="bookmark" title="The Vimer a Vim Primer">The Vimer a Vim Primer</a></h1>
+        
+        <h2><span class="entry-date date published"><time datetime="2015-06-09T00:00:00-05:00">June 09, 2015</time></span></h2>
+        
+        <p class="entry-reading-time">
+          <i class="fa fa-clock-o"></i>
+          
+Reading time ~3 minutes
+        </p><!-- /.entry-reading-time -->
+        
+      </div><!-- /.header-title-wrap -->
+    </header>
+    <div class="entry-content">
+      <p>So you accidentally opened vim can’t figure out how to close it and now are here.</p>
+
+<h3 id="dont-panic">Don’t Panic</h3>
+
+<p>Vim is easier than it looks and you will be on your way to using it as well as any normal text editor in less than a minute.</p>
+
+<h3 id="esc-is-your-friend">ESC is your friend</h3>
+
+<p>Assuming you hit a bunch of random keys when you first opened it, the first thing you probably need to do is spam the <em>ESC</em> key until it looks like it will behave.</p>
+
+<h3 id="welcome-to-command-mode">Welcome to Command Mode</h3>
+
+<p>You should hopefully now be in command mode…. where you issue commands.  Vim has lots of commands, whole desktop wallpapers worth, we don’t care about any of those.  We just want to move around and edit some text.</p>
+
+<h3 id="h-j-k-l---basic-movement">h, j, k, l -&gt; Basic movement</h3>
+
+<p>These keys will move your cursor around, you can also use the arrow keys if your brain refuses to think of j as down.</p>
+
+<h3 id="i---insert-mode">i -&gt; insert mode</h3>
+
+<p>Welcome to your second mode in Vim, pressing the <em>i</em> key will put you in insert mode, now you can type out text like you are used to.  Whenever you are done you probably want to save it though so remember our friend the <em>ESC</em> key, jam him 5 or 6 times just to be safe to move back to command mode.</p>
+
+<h3 id="w---write">:w -&gt; write</h3>
+
+<p>When you are in command mode (you did hit <em>ESC</em> 6 times right) type <em>:w</em> and hit enter.  That should spit out some text at the bottom about how you wrote to some file.</p>
+
+<h3 id="q---quit">:q -&gt; quit</h3>
+
+<p>Looks like we are done here, while in command mode (hit <em>ESC</em> 7 or 12 times just to be sure) <em>:q</em> and enter will quit.  For convenience you can put <em>:w</em> and <em>:q</em> together like <em>:wq</em> to save and quit at the same time.</p>
+
+<h2 id="congratulations">Congratulations</h2>
+
+<p>You can now use vim just as well as any other text editor.</p>
+
+<h3 id="advanced-vimer">Advanced Vimer</h3>
+
+<p>But wait you ask, what about copy/paste and finding/replacing text, my normal text editor does those, can’t the mighty Vim.</p>
+
+<h3 id="v---visual-mode">v -&gt; visual mode</h3>
+
+<p>If you want to copy and paste some text, the first thing you probably want to do is select the text to be copied, an intuitive way to do this in vim is to use Visual mode.  While in command mode you can press <em>v</em> to enter visual mode.  While in visual mode you will be able to highlight text and commands you type will normally happen against the selected text, for example copying.</p>
+
+<h3 id="y---copy-yank">y -&gt; copy (yank)</h3>
+
+<p>With text highlighted you can press the <em>y</em> key in visual mode to copy the selected text.  If full lines of text are your thing you can press <em>yy</em> in command mode to copy the entire current line.</p>
+
+<h3 id="p---paste">p -&gt; paste</h3>
+
+<p>Pasting is as simple as pressing <em>p</em> in the right place, while in command mode.</p>
+
+<h3 id="finding">/ -&gt; finding</h3>
+
+<p>While in command mode, you can use the <em>/</em> command followed by text to search the currently open file for it.  By default it will search from the top of the file, when you have put in the text you want to search for you can press enter to move the cursor to the first instance, from here you can use <em>n</em> to move forward and <em>N</em> to move backwards.  You will often find that the upper case version of a command in Vim will do the <em>reverse</em>.</p>
+
+<h3 id="sfindreplaceg---findreplace">:%s/find/replace/g -&gt; find/replace</h3>
+
+<p>This command is a little complex, but extremely powerful.  Like all things that start with : this is run from command mode, however it can be run from visual mode as well if you drop the %.  In the example we are replacing all instances of <em>find</em> with <em>replace</em>.  You can put regular expressions into this allowing you some very powerful finding/replacing.</p>
+
+      <footer class="entry-meta">
+        <span class="entry-tags"><a href="/tags/#vim" title="Pages tagged vim" class="tag"><span class="term">vim</span></a></span>
+        
+        <div class="social-share">
+  <ul class="socialcount socialcount-small inline-list">
+    <li class="facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=/vimer/" title="Share on Facebook"><span class="count"><i class="fa fa-facebook-square"></i> Like</span></a></li>
+    <li class="twitter"><a href="https://twitter.com/intent/tweet?text=/vimer/" title="Share on Twitter"><span class="count"><i class="fa fa-twitter-square"></i> Tweet</span></a></li>
+    <li class="googleplus"><a href="https://plus.google.com/share?url=/vimer/" title="Share on Google Plus"><span class="count"><i class="fa fa-google-plus-square"></i> +1</span></a></li>
+  </ul>
+</div><!-- /.social-share -->
+      </footer>
+    </div><!-- /.entry-content -->
+    
+    <div class="read-more">
+  
+    <div class="read-more-header">
+      <a href="/rdf/triple%20stores/comparing-triplestores/" class="read-more-btn">Read More</a>
+    </div><!-- /.read-more-header -->
+    <div class="read-more-content">
+      <h3><a href="/rdf/triple%20stores/comparing-triplestores/" title="Comparing Triple Stores">Comparing Triple Stores</a></h3>
+      <p>In looking into the world of triple stores there, exists very little in the way of traditional web communities discussing and comparing t...&hellip; <a href="/rdf/triple%20stores/comparing-triplestores/">Continue reading</a></p>
+    </div><!-- /.read-more-content -->
+  
+  <div class="read-more-list">
+    
+  </div><!-- /.read-more-list -->
+</div><!-- /.read-more -->
+  </article>
+</div><!-- /#main -->
+
+<div class="footer-wrapper">
+  <footer role="contentinfo">
+    <span>&copy; 2016 Joseph Utecht. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> using the <a href="https://mademistakes.com/work/hpstr-jekyll-theme/" rel="nofollow">HPSTR Theme</a>.</span>
+  </footer>
+</div><!-- /.footer-wrapper -->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="/assets/js/scripts.min.js"></script>
+
+
+
+	        
+
+</body>
+</html>
